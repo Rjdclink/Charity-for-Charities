@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity for Charities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('path-to-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .charity-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .charity-list div {
+            width: 48%;
+            margin-bottom: 10px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        footer {
+            font-size: 10px;
+            text-align: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Charity for Charities</h1>
+        <p>Our mission is to assist you with donating to your own cause. Most people want to help out by providing donations to a good cause; however, finding that cause can be extremely difficult. That's where Charity for Charities comes in. We do all the footwork to find the charity that best describes your cause and ensure your donation is received by that cause.</p>
+    </header>
+    <div class="content">
+        <h2>Make a Difference Today</h2>
+        <p>Join us in our mission to make donating simple and impactful. Charity for Charities connects your generosity to the causes you care about most. Whether it's education, healthcare, animal welfare, or environmental conservation, we've got you covered.</p>
+        <div class="charity-list">
+            <div>Education</div>
+            <div>Healthcare</div>
+            <div>Animal Welfare</div>
+            <div>Environmental Conservation</div>
+            <div>Hunger Relief</div>
+            <div>Disaster Relief</div>
+            <div>Community Development</div>
+            <div>Human Rights</div>
+        </div>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="charity-type">Enter your desired charity type:</label><br>
+            <input type="text" id="charity-type" name="charity-type" required><br><br>
+            <label for="donation-amount">Enter your donation amount ($):</label><br>
+            <input type="number" id="donation-amount" name="donation-amount" required><br><br>
+            <button type="submit">Donate Now</button>
+        </form>
+    </div>
+    <footer>
+        <p>A portion of the donation will be used to support this website.</p>
+    </footer>
+</body>
+</html>
